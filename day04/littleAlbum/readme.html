@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	mvc 分别放在不同文件夹，互相调用，减少耦合
+	controller为控制器，控制跳转后要执行的事情
+	流程像水管一样往下流
+	app.js :中控中心		最高层
+	"/"：表示没有路由参数的时候
+	把嘴底层的操作交给models内的文件（模型）
+	所有的js文件是从自己出发去寻找该引的包
+	先把小函数做干净了再做大函数
+	callback("没有找到文件夹",null);将错误传到上层
+	error页面的文件必须走绝对地址 <%=baseurl%>
+	req.pathname
+	/表示根目录
+	注意需要静态哪些文件夹？？静态资源，图片
+
+	中间件接住路由
+	$(compiledString)把字符串转化为DOM节点对象
+	underscore是前端的模板引擎
+</body>
+</html>
